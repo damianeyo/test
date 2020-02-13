@@ -8,6 +8,7 @@ sock.bind(addr)
 
 while True:
     client = sock.recvfrom(1518)
+    
     message_bytes = client[0]
     client_addr = client[1]
 
